@@ -64,6 +64,6 @@ CTEST(validation_time, time_zero)
 CTEST(validation_time, time_equal) 
 {
 	int res = InputTime(365);
-	const int exp = 3;
+	const int exp = 1;
 	ASSERT_EQUAL(exp, res);
 }
