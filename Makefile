@@ -2,6 +2,7 @@ all:  deposit
 
 deposit: mkDir main.o deposit.o
 	gcc build/main.o build/deposit.o -o bin/deposit
+	./bin/deposit
 mkDir:
 	mkdir -p bin
 	mkdir -p build
@@ -13,6 +14,4 @@ deposit.o: src/deposit.c
 clean:
 	rm -r -f bin/*
 	rm -r -f build/*
-rmDir: 
-	rm -r bin
-	rm -r build
+
